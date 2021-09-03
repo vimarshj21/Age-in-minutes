@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/appBg2"
+    android:background="@drawable/app_bg"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:padding="20dp"
@@ -14,24 +14,34 @@
         android:id="@+id/tv_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="140dp"
         android:text="Result"
+        android:fontFamily="@font/courgette"
         android:textColor="#D8D6D6"
         android:textSize="40sp"
         android:textStyle="bold"/>
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="160"
-        android:layout_marginTop="70dp"
-        android:contentDescription="image"
-        android:src="@drawable/award" />
+    <View
+        android:layout_width="130dp"
+        android:layout_height="2dp"
+        android:background="#D0DA64"/>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/gaminglottie"
+        android:layout_marginTop="55dp"
+        android:layout_width="285dp"
+        android:layout_height="285dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/lottiee"
+        tools:ignore="MissingClass" />
 
     <TextView
         android:id="@+id/tv_congratulations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="7dp"
         android:text="Hey, Congratulations"
         android:textColor="#D8D6D6"
         android:textSize="25sp"
@@ -65,7 +75,7 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/white"
         android:text="FINISH"
-        android:textColor="#277DB6"
+        android:textColor="#6F65C8"
         android:textSize="18sp"
         android:textStyle="bold"/>
 
